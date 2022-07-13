@@ -82,7 +82,7 @@ body .container .level h2 {
   font-size: 25px;
   margin-bottom: 20px;
   background-color: antiquewhite;
-  width: 100px;
+  width: 180px;
   color: #444444;
   padding-left: 20px;
   padding-right: 20px;
@@ -137,7 +137,6 @@ body .container .level .tags span {
 body .container .level .tags span:hover {
   background-color: grey;
   color: antiquewhite;
-  cursor: pointer;
 }
 
 body .container .level .tags span:before {

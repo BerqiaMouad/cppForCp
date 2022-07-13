@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/level_1.css">
+    <title>Hello World</title>
+</head>
+<body>
+    
+    <video autoplay loop muted plays-inline class="bgvideo">
+        <source src="../images/everylevel.mp4" type="video/mp4">
+    </video>
+    
+    <div class="presentation">
+        <h1>Hello World</h1>
+        <p>
+            So in this section you will learn how to code your first program. <br>
+            I know you are excited, so I will stop talking too much and let's go to work!
+        </p>
+        <a href="#cpplayout">Let's Start</a>
+    </div>
+
+    <div class="cpplayout" id="cpplayout">
+        <h2>C++ Code Layout</h2>
+        <div class="content">
+            <img src="../images/cpplayout.png" alt="C++ Code Layout">
+            <div class="description">
+                <dl>
+                    <dt> #include <\iostream> </dt>
+                    <dd>It is used to include the standard input/output to be able to take input from the user and output stuff in the consol.</dd>
+                    <dt>int main(){}</dt>
+                    <dd>
+                        It's the main function (we will talk about functions later on in our adventure), this fucntion is, as the name says, the main one, where every thing goes. <br>
+                        When you execute the program, the compiler searches for this particular fucntion to start working and executing commends.
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <a href="#printconsole">Next Step</a>
+    </div>
+
+    <div class="printconsole" id="printconsole">
+        <h2>Print To Console</h2>
+        <div class="content">
+            <img src="../images/printconsole.png" alt="Code to print in console">
+            <div class="description">
+                <p>
+                    As you can see we use the following line: <span>std::cout << "hey you!";</span>. The lather prints the message 'hey you!' to the console. <br>
+                    First, <span>std::</span>, this helps us use the standard library funciton like cout. Second of all, <span>cout</span>, this one is pronounced "see out", it like the C language is getting something out, that's why it's use to print out stuff to the console. 
+                </p>
+            </div>
+        </div>
+        <a href="#practice">Let's practice</a>
+    </div>
+
+    <div class="practice" id="practice">
+        <h2>Practice</h2>
+        <div class="content">
+            <iframe frameborder="0" width="100%" height="500px"
+                src="https://replit.com/@mouadberqia/Hello-World?lite=true" class="code"></iframe>
+        
+            <div class="problemstatement">
+                <h3>Ahmed says Hello</h3>
+                <p>
+                    Ahmed is new to coding, he meets you in the same class
+                    that teaches C++, he has no friends so he wants to know you better. <br>
+                    You saw him entring the class and you wanted to say hi, but we are geeks aren't we?
+                    You decided to say "Hello World!" instead of the normal human talk.
+                    <br> <br>
+                    Write a program that displays the message "Hello World!" to the console. <br>
+                    (try to output more messages to be happy with your first program :P)
+                    <br>
+                    NB: click on the play button to execute your code.
+                </p>
+            </div>
+        </div>
+    
+    </div>
+    
+    
+    <!-- scripts ========================== -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script src="../js/typing.js"></script>
+    <script src="../js/index.js"></script>
+    <!-- scripts ========================== -->
+
+
+</body>
+</html>
