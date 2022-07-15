@@ -9,6 +9,16 @@ html {
   padding: 0;
 }
 
+* ::-moz-selection {
+  color: #000;
+  background-color: antiquewhite;
+}
+
+* ::selection {
+  color: #000;
+  background-color: antiquewhite;
+}
+
 * a {
   color: antiquewhite;
   text-decoration: none;

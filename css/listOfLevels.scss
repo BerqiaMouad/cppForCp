@@ -7,6 +7,15 @@ html{
     font-family: 'Source Code Pro', monospace;
     margin: 0;
     padding: 0;
+    ::-moz-selection{
+        color: #000;
+        background-color: antiquewhite;
+    }
+
+    ::selection{
+        color: #000;
+        background-color: antiquewhite;
+    }
 
     a {
         color: antiquewhite;
