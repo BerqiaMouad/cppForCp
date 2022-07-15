@@ -93,6 +93,65 @@ body .container .content {
   padding: 100px;
 }
 
+body .container .content .button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid antiquewhite;
+  margin: 20px 20px 20px 0px;
+  color: antiquewhite;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+body .container .content a {
+  color: antiquewhite;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+body .container .content #button {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+body .container .content #button a {
+  position: relative;
+  -webkit-transition: all .35s ease-Out;
+  transition: all .35s ease-Out;
+}
+
+body .container .content #slide {
+  width: 100%;
+  height: 100%;
+  left: -200px;
+  background: antiquewhite;
+  position: absolute;
+  -webkit-transition: all .35s ease-Out;
+  transition: all .35s ease-Out;
+  bottom: 0;
+}
+
+body .container .content #button:hover #slide {
+  left: 0;
+}
+
+body .container .content #button:hover a {
+  color: #2D3142;
+}
+
 body .container .content .timeline {
   width: 80%;
   height: auto;
@@ -127,7 +186,7 @@ body .container .content .timeline-content h1 {
 body .container .content .timeline-content p {
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: 300;
 }
 
