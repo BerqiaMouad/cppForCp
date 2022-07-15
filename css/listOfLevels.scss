@@ -15,12 +15,19 @@ html{
 }
 
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 body{
     margin: 0;
     padding: 0;
     line-height: 1.5;
     font-weight: 400;
     color: antiquewhite;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 
     video {
         position: fixed;
@@ -68,91 +75,121 @@ body{
             }
         }
 
-        .level{
-            margin-top: 40px;
-            margin-left: 60px;
-            margin-right: 60px;
-            margin-bottom: 20px;
+        .content{
+            min-height: 100vh;
+            // width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px;
 
-            h2{
-                font-size: 25px;
-                margin-bottom: 20px;
-                background-color: antiquewhite;
-                width: 180px;
-                color: rgb(68, 68, 68);
-                padding-left: 20px;
-                padding-right: 20px;
-                border-radius: 25px;
-            }
-            p{
-                font-size: 16px;
-                margin-bottom: 10px;
+            .timeline {
+                width: 80%;
+                height: auto;
+                max-width: 800px;
+                margin: 0 auto;
+                position: relative;
             }
 
-            a{
-                font-size: 18px;
-                border-color: antiquewhite;
-                font-weight: 600;
-                border-width: 1px;
-                border-style: inset;
-                padding: 5px;
-                margin-bottom: 10px;
+            .timeline ul {
+                list-style: none;
+            }
+
+            .timeline ul li {
+                padding: 20px;
+                background-color: #1e1f22;
+                color: white;
                 border-radius: 10px;
-                transition: 0.5s;
-                text-align: center;
+                margin-bottom: 20px;
             }
-            a:hover{
-                border-radius: 0px;
-                background-color: antiquewhite;
-                color: #000;
-            }
-            .tags{
-                margin-top: 20px;
-                font-size: 18px;
-                text-align: center;
 
-                span{
-                    background: antiquewhite;
-                    display: inline-block;
-                    color: grey;
-                    position: relative;
-                    padding: 5px;
-                    border-top-left-radius: 4px;
-                    border-bottom-left-radius: 4px;
-                    margin: 0 30px 0 0;
-                    text-decoration: none;
-                    transition: 0.5s;
-                }
-                span:hover{
-                    background-color: grey;
-                    color: antiquewhite;
-                }
-                span:before{
-                    background: transparent;
-                    width: 10px;
-                    height: 6px;
+            .timeline ul li:last-child {
+                margin-bottom: 0;
+            }
+
+            .timeline-content h1 {
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 30px;
+                margin-bottom: 10px;
+            }
+
+            .timeline-content p {
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 20px;
+                font-weight: 300;
+            }
+
+            .timeline-content .date {
+                font-size: 12px;
+                font-weight: 300;
+                margin-bottom: 10px;
+                letter-spacing: 2px;
+            }
+
+            @media only screen and (min-width: 768px){
+                .timeline:before {
                     content: "";
-                    display: inline-block;
-                    border-radius: 20px;
-                    margin: 0 5px 0 0;
-                }
-                span:after{
-                    display: inline-block;
-                    border: 19px solid;
-                    border-color: transparent transparent transparent antiquewhite;
-                    height: 0;
-                    width: 0;
                     position: absolute;
-                    right: -38px;
                     top: 0;
-                    content: "";
-                    display: inline-block;
-                    transition: 0.5s;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 2px;
+                    height: 100%;
+                    background-color: gray;
                 }
-                span:hover:after{
-                    border-color: transparent transparent transparent grey;
+
+                .timeline ul li {
+                    width: 50%;
+                    position: relative;
+                    margin-bottom: 50px;
+                }
+
+                .timeline ul li:nth-child(odd) {
+                    float: left;
+                    clear: right;
+                    transform: translateX(-60px);
+                    border-radius: 20px 0px 20px 20px;
+                }
+
+                .timeline ul li:nth-child(even) {
+                    float: right;
+                    clear: left;
+                    transform: translateX(60px);
+                    border-radius: 0px 20px 20px 20px;
+                }
+
+                .timeline ul li::before {
+                    content: "";
+                    position: absolute;
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    background-color: gray;
+                    top: 0px;
+                }
+
+                .timeline ul li:nth-child(odd)::before {
+                    transform: translate(0%, -50%);
+                    right: -30px;
+                }
+
+                .timeline ul li:nth-child(even)::before {
+                    transform: translate(0%, -50%);
+                    left: -30px;
+                }
+
+                .timeline-content .date {
+                    position: absolute;
+                    top: -30px;
+                }
+
+                .timeline ul li:hover::before {
+                    background-color: antiquewhite;
                 }
             }
         }
+
     }
 }

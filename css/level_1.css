@@ -14,12 +14,21 @@ html {
   text-decoration: none;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
+  overflow-y: hidden;
   margin: 0;
   padding: 0;
   line-height: 1.5;
   font-weight: 400;
   color: antiquewhite;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 body video {
@@ -51,6 +60,10 @@ body .presentation p {
   margin-bottom: 30px;
 }
 
+body .presentation p span {
+  color: #fa8989;
+}
+
 body .presentation a {
   background-color: antiquewhite;
   width: 180px;
@@ -62,8 +75,8 @@ body .presentation a {
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 25px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 body .presentation a:hover {
@@ -119,8 +132,8 @@ body .cpplayout a {
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 25px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 body .cpplayout a:hover {
@@ -175,8 +188,8 @@ body .printconsole a {
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 25px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 body .printconsole a:hover {
@@ -223,5 +236,27 @@ body .practice .content .problemstatement h3 {
 body .practice .content .problemstatement p {
   font-size: 18px;
   text-align: justify;
+  padding-bottom: 30px;
+}
+
+body .practice .content .problemstatement a {
+  float: right;
+  background-color: antiquewhite;
+  width: 180px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #444444;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .practice .content .problemstatement a:hover {
+  background-color: grey;
+  color: antiquewhite;
 }
 /*# sourceMappingURL=level_1.css.map */

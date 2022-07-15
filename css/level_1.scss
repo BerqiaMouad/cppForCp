@@ -14,12 +14,20 @@ html {
     }
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 body{
+    overflow-y: hidden;
     margin: 0;
     padding: 0;
     line-height: 1.5;
     font-weight: 400;
     color: antiquewhite;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 
     video {
         position: fixed;
@@ -45,6 +53,10 @@ body{
         p{
             font-size: 18px;
             margin-bottom: 30px;
+            
+            span{
+                color: rgb(250, 137, 137);
+            }
         }
 
         a{
@@ -58,7 +70,7 @@ body{
             padding-top: 10px;
             padding-bottom: 10px;
             border-radius: 25px;
-            transition: 0.5s;
+            transition: 0.3s;
         }
         a:hover{
             background-color: grey;
@@ -110,7 +122,7 @@ body{
             padding-top: 10px;
             padding-bottom: 10px;
             border-radius: 25px;
-            transition: 0.5s;
+            transition: 0.3s;
         }
         a:hover{
             background-color: grey;
@@ -160,7 +172,7 @@ body{
             padding-top: 10px;
             padding-bottom: 10px;
             border-radius: 25px;
-            transition: 0.5s;
+            transition: 0.3s;
         }
         a:hover{
             background-color: grey;
@@ -200,6 +212,26 @@ body{
                 p{
                     font-size: 18px;
                     text-align: justify;
+                    padding-bottom: 30px;
+                }
+                a {
+                    float: right;
+                    background-color: antiquewhite;
+                    width: 180px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: rgb(68, 68, 68);
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    border-radius: 25px;
+                    transition: 0.3s;
+                }
+        
+                a:hover {
+                    background-color: grey;
+                    color: antiquewhite;
                 }
             }
         }
