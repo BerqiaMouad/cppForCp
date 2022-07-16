@@ -33,12 +33,12 @@ body .pop-up {
   }
 }
 body .pop-up h2 {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 body .pop-up p {
-  font-size: 13px;
-  line-height: 30px;
+  font-size: 15px;
+  line-height: 23px;
 }
 body .container {
   width: 100%;
