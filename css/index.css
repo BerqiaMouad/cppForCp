@@ -20,7 +20,7 @@ body .pop-up {
   width: 50%;
   color: antiquewhite;
   z-index: 100;
-  padding: 20px 30px;
+  padding: 18px 28px;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -33,11 +33,11 @@ body .pop-up {
   }
 }
 body .pop-up h2 {
-  font-size: 30px;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 body .pop-up p {
-  font-size: 20px;
+  font-size: 13px;
   line-height: 30px;
 }
 body .container {
