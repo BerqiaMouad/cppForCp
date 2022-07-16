@@ -3,22 +3,19 @@ html {
 }
 
 * {
-  font-family: 'Rubik', sans-serif;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Rubik", sans-serif;
+  font-family: "Source Code Pro", monospace;
   margin: 0;
   padding: 0;
 }
-
 * ::-moz-selection {
   color: #000;
   background-color: antiquewhite;
 }
-
 * ::selection {
   color: #000;
   background-color: antiquewhite;
 }
-
 * a {
   color: antiquewhite;
   text-decoration: none;
@@ -34,12 +31,9 @@ body {
   line-height: 1.5;
   font-weight: 400;
   color: antiquewhite;
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-
 body video {
   position: fixed;
   z-index: -2;
@@ -49,63 +43,46 @@ body video {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: brightness(40%);
-          filter: brightness(40%);
+  filter: brightness(40%);
 }
-
 body .container .top-section {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-left: 50px;
   margin-right: 50px;
   height: 100vh;
   padding-top: 150px;
   text-align: center;
 }
-
 body .container .top-section h1 {
   font-size: 45px;
   font-weight: 700;
 }
-
 body .container .top-section p {
   font-size: 17px;
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 20px;
 }
-
 body .container .top-section a {
   font-size: 25px;
   background-color: antiquewhite;
   width: 100px;
   margin-top: 20px;
-  color: #444444;
+  color: rgb(68, 68, 68);
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 25px;
 }
-
 body .container .content {
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   padding: 100px;
 }
-
 body .container .content .button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   height: 40px;
   width: 150px;
@@ -114,54 +91,41 @@ body .container .content .button {
   color: antiquewhite;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: .8em;
+  font-size: 0.8em;
   letter-spacing: 1.5px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
-
 body .container .content a {
   color: antiquewhite;
   text-decoration: none;
   letter-spacing: 1px;
 }
-
 body .container .content #button {
   position: relative;
   overflow: hidden;
   cursor: pointer;
 }
-
 body .container .content #button a {
   position: relative;
-  -webkit-transition: all .35s ease-Out;
-  transition: all .35s ease-Out;
+  transition: all 0.35s ease-Out;
 }
-
 body .container .content #slide {
   width: 100%;
   height: 100%;
   left: -200px;
   background: antiquewhite;
   position: absolute;
-  -webkit-transition: all .35s ease-Out;
-  transition: all .35s ease-Out;
+  transition: all 0.35s ease-Out;
   bottom: 0;
 }
-
 body .container .content #button:hover #slide {
   left: 0;
 }
-
 body .container .content #button:hover a {
   color: #2D3142;
 }
-
 body .container .content .timeline {
   width: 80%;
   height: auto;
@@ -169,11 +133,9 @@ body .container .content .timeline {
   margin: 0 auto;
   position: relative;
 }
-
 body .container .content .timeline ul {
   list-style: none;
 }
-
 body .container .content .timeline ul li {
   padding: 20px;
   background-color: #1e1f22;
@@ -181,40 +143,34 @@ body .container .content .timeline ul li {
   border-radius: 10px;
   margin-bottom: 20px;
 }
-
 body .container .content .timeline ul li:last-child {
   margin-bottom: 0;
 }
-
 body .container .content .timeline-content h1 {
   font-weight: 500;
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 10px;
 }
-
 body .container .content .timeline-content p {
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 10px;
   font-weight: 300;
 }
-
 body .container .content .timeline-content .date {
   font-size: 12px;
   font-weight: 300;
   margin-bottom: 10px;
   letter-spacing: 2px;
 }
-
 @media only screen and (min-width: 768px) {
   body .container .content .timeline:before {
     content: "";
     position: absolute;
     top: 0;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     width: 2px;
     height: 100%;
     background-color: gray;
@@ -227,15 +183,13 @@ body .container .content .timeline-content .date {
   body .container .content .timeline ul li:nth-child(odd) {
     float: left;
     clear: right;
-    -webkit-transform: translateX(-60px);
-            transform: translateX(-60px);
+    transform: translateX(-60px);
     border-radius: 20px 0px 20px 20px;
   }
   body .container .content .timeline ul li:nth-child(even) {
     float: right;
     clear: left;
-    -webkit-transform: translateX(60px);
-            transform: translateX(60px);
+    transform: translateX(60px);
     border-radius: 0px 20px 20px 20px;
   }
   body .container .content .timeline ul li::before {
@@ -248,13 +202,11 @@ body .container .content .timeline-content .date {
     top: 0px;
   }
   body .container .content .timeline ul li:nth-child(odd)::before {
-    -webkit-transform: translate(0%, -50%);
-            transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
     right: -30px;
   }
   body .container .content .timeline ul li:nth-child(even)::before {
-    -webkit-transform: translate(0%, -50%);
-            transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
     left: -30px;
   }
   body .container .content .timeline-content .date {
@@ -264,5 +216,4 @@ body .container .content .timeline-content .date {
   body .container .content .timeline ul li:hover::before {
     background-color: antiquewhite;
   }
-}
-/*# sourceMappingURL=listOfLevels.css.map */
+}/*# sourceMappingURL=listOfLevels.css.map */
